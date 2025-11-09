@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Agent</title>
+    <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet">
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; }
+      .app { display: grid; grid-template-columns: 380px 1fr; height: 100vh; }
+      .sidebar { border-right: 1px solid #e5e7eb; padding: 12px; overflow:auto; }
+      .content { padding: 12px; overflow:auto; }
+      .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; margin-bottom: 12px; }
+      table { border-collapse: collapse; width: 100%; }
+      th, td { border: 1px solid #e5e7eb; padding: 6px 8px; text-align: left; font-size: 12px; }
+      .inputRow { display: flex; gap: 8px; }
+      input[type=text] { flex: 1; padding: 8px; border: 1px solid #cbd5e1; border-radius: 8px; }
+      button { padding: 8px 12px; border: 0; background: #111827; color: white; border-radius: 8px; cursor: pointer; }
+      #chart, #map { height: 420px; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
