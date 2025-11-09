@@ -1,7 +1,6 @@
 // src/duck.ts
-import * as duckdb from '@duckdb/duckdb-wasm';
-import wasmUrl from '@duckdb/duckdb-wasm/dist/duckdb-eh.wasm?url';
-import workerUrl from '@duckdb/duckdb-wasm/dist/duckdb-browser-eh.worker.js?url';
+// src/duck.ts
+import duckdb, { AsyncDuckDB, ConsoleLogger } from "@duckdb/duckdb-wasm";
 
 export async function initDuck() {
   // Build a minimal bundle for Vite
